@@ -1,0 +1,100 @@
+<!-- Vineet Kumar Singh :: Case Study -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Bee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="Shopping Bee :: Online shopping store" name="description">
+	<meta content="Shopping Bee, Online Shopping" name="keywords">
+	<meta name="theme-color" content="#131317">
+	<link rel="icon" type="img/jpg" href="../assets/images/shopping-bee-logo.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Coustard">
+    <link rel="stylesheet" href="../css/shoppingbee.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../assets/json/productDetails.json" ></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/product.js"></script>
+</head>
+<body>
+    <div class="text-center modified-container">
+        <div class="row login-container">
+            <div class="panel panel-default login-content">
+                <div class="panel-heading text-left">
+                    <div class="text-center"><img src="../assets/images/shopping-bee-logo.jpg" class="img-rounded" alt="Shopping Bee Logo" height="70"></div>
+                    <h4>Login to Shopping Bee<span class="glyphicon glyphicon-lock modified-glyphicon-lock"></span></h4>
+                    <div><h5>Enter username and password to log on</h5></div>
+                </div>
+                <div class="panel-body modified-panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input class="form-control" type="text" placeholder="Enter Username" value="vineet" id="username">
+                                <span class="glyphicon glyphicon-exclamation-sign modified-exclamation"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input class="form-control" type="password" placeholder="Enter password" value="asdfghjkl" id="password">
+                                <span class="glyphicon glyphicon-exclamation-sign modified-exclamation"></span>
+                            </div>
+                        </div>
+                        <label class="remember-me"><input type="checkbox"> Remember me</label>
+                        <a href="#" style="float:right; color:white;">Forgot password?</a>
+                        <button type="button" class="btn btn-warning btn-block" id="loginSubmit">Login</button>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <span>Don't have an account?</span> 
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-left">
+        <div class="container text-center">
+            <h4>© Shopping Bee, 2016 :: Vineet Kumar Singh<span class="footer-updated">Last Updated: Sept 11th, 2016, 5:30PM</span></h4>
+        </div>
+        <div class="container footer-links">
+            <div class="row footer-links">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <h4>Popular Categories</h4>
+                    <ul>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Mobiles</a></li>
+                        <li><a href="#">Laptops</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <h4>Shopping Bee</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">In News</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h4>Get Social With Us</h4>
+                    <ul id="social">
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">Google+</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+var credentials =  {
+    "vineetks":[
+        {
+            "username": "vineetks",
+            "password": "vineetks",
+            "cart": ['electronics-3', 'books-2', 'sports-5']
+        }
+    ],
+
+    "vineet":[
+        {
+            "username": "vineet",
+            "password": "asdfghjkl",
+            "cart": ['electronics-4', 'books-1']
+        }
+    ]
+};
+
+var filters =  {
+    "electronics":[
+        {
+            "filterType":"Sub-Category",
+            "filterItem": [ 'Mobile','Laptop' ]
+        },
+        {
+            "filterType":"Price",
+            "filterItem": [ '0-5000','5000-10000','10000-20000','>20000' ]
+        }
+    ],
+
+    "books":[
+        {
+            "filterType":"Sub-Category",
+            "filterItem": [ 'Hard Copy','Soft Copy' ]
+        },
+        {
+            "filterType":"Price",
+            "filterItem": [ '0-400','400-1000','1000-2500','>2500' ]
+        },
+        {
+            "filterType":"Author",
+            "filterItem": [ 'Dharmveer Bharti','Chetan Bhagat','Prem Chand','Sydney Sheldon' ]
+        }
+    ],
+
+    "sports":[
+        {
+            "filterType":"Sub-Category",
+            "filterItem": [ 'Shoes','Sports-Kit' ]
+        },
+        {
+            "filterType":"Price",
+            "filterItem": [ '0-400','400-1000','1000-2000','>2000' ]
+        },
+        {
+            "filterType":"Brand",
+            "filterItem": [ 'Adidas','Nike' ]
+        }
+    ],
+
+    "clothing":[
+        {
+            "filterType":"Sub-Category",
+            "filterItem": [ 'Shirt','T-Shirt' ]
+        },
+        {
+            "filterType":"Price",
+            "filterItem": [ '0-500','500-1000','1000-2000','>2000' ]
+        }
+    ]
+};
+
+var productItems = {
+    "electronics":[
+        {  "productID":"electronics-1", "productName":"Dell Laptop - Inspiron",  "imageSRC": "electronics/laptop-1.jpg", "brandName":"Dell",    "price":"36000", "subCategory":"Laptop", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"electronics-2", "productName":"Samsung Laptop",          "imageSRC": "electronics/laptop-2.jpg", "brandName":"Samsung", "price":"32000", "subCategory":"Laptop", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"electronics-3", "productName":"Dell Laptop - Vostro",    "imageSRC": "electronics/laptop-3.jpg", "brandName":"Dell",    "price":"26000", "subCategory":"Laptop", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"electronics-4", "productName":"Lenovo Laptop",           "imageSRC": "electronics/laptop-4.jpg", "brandName":"Lenovo",  "price":"42000", "subCategory":"Laptop", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"electronics-5", "productName":"Windows Mobile",          "imageSRC": "electronics/mobile-1.jpg", "brandName":"Windows", "price":"9999",  "subCategory":"Mobile", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"electronics-6", "productName":"Apple Mobile - S7",       "imageSRC": "electronics/mobile-2.jpg", "brandName":"Apple",   "price":"24999", "subCategory":"Mobile", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"electronics-7", "productName":"Apple Mobile - S6",       "imageSRC": "electronics/mobile-3.jpg", "brandName":"Apple",   "price":"19999", "subCategory":"Mobile", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"electronics-8", "productName":"Samsung Mobile",          "imageSRC": "electronics/mobile-4.jpg", "brandName":"Samsung", "price":"12999", "subCategory":"Mobile", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"electronics-9", "productName":"Nokia C1 Mobile",          "imageSRC": "electronics/mobile-5.jpg", "brandName":"NOKIA", "price":"2999", "subCategory":"Mobile", "details": [1, 2, 3, 4, 5] }
+    ],
+
+    "books":[
+        {  "productID":"books-1", "productName":"Gunaho ka Devta",       "imageSRC": "books/book-1.jpg", "author":"Dharmveer Bharti",  "price":"250",  "subCategory":"Hard Copy", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"books-2", "productName":"Differential Calculus", "imageSRC": "books/book-2.jpg", "author":"George Fisher",     "price":"1999", "subCategory":"Soft Copy", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"books-3", "productName":"Five Point Someone",    "imageSRC": "books/book-3.jpg", "author":"Chetan Bhagat",     "price":"499",  "subCategory":"Hard Copy", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"books-4", "productName":"Godaan",                "imageSRC": "books/book-4.jpg", "author":"Prem Chand",        "price":"599",  "subCategory":"Hard Copy", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"books-5", "productName":"Bloodline",             "imageSRC": "books/book-5.jpg", "author":"Sydney Sheldon",    "price":"3299", "subCategory":"Soft Copy", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"books-6", "productName":"Gaban",                 "imageSRC": "books/book-6.jpg", "author":"Prem Chand",        "price":"399",  "subCategory":"Hard Copy", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"books-7", "productName":"Andha Yug",             "imageSRC": "books/book-7.jpg", "author":"Dharmveer Bharti",  "price":"449",  "subCategory":"Hard Copy", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"books-8", "productName":"Two States",            "imageSRC": "books/book-8.jpg", "author":"Chetan Bhagat",     "price":"599",  "subCategory":"Hard Copy", "details": [1, 2, 3, 4, 5] }
+    ],
+
+    "sports":[
+        {  "productID":"sports-1", "productName":"Adidas - ZX Flux - Women's",   "imageSRC": "sports/shoes-1.jpg", "brandName":"Adidas",    "price":"899",  "subCategory":"Shoes", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"sports-2", "productName":"Adidas - ADV Shoes",           "imageSRC": "sports/shoes-2.jpg", "brandName":"Adidas",    "price":"799",  "subCategory":"Shoes", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"sports-3", "productName":"Adidas - Crazylight Boost",    "imageSRC": "sports/shoes-3.jpg", "brandName":"Adidas",    "price":"1199", "subCategory":"Shoes", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"sports-4", "productName":"Adidas - Super Wedge",         "imageSRC": "sports/shoes-4.jpg", "brandName":"Adidas",    "price":"499",  "subCategory":"Shoes", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"sports-5", "productName":"Nike Air Max Thea",            "imageSRC": "sports/shoes-5.jpg", "brandName":"Nike",      "price":"449",  "subCategory":"Shoes", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"sports-6", "productName":"Roshe One - Men's",            "imageSRC": "sports/shoes-6.jpg", "brandName":"Nike",      "price":"1099", "subCategory":"Shoes", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"sports-7", "productName":"Badminton Racket",    "imageSRC": "sports/sports-kit-1.jpg", "brandName":"Yonex",     "price":"599",  "subCategory":"Sports-Kit", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"sports-8", "productName":"Cricket Bat",         "imageSRC": "sports/sports-kit-2.jpg", "brandName":"SS",        "price":"799",  "subCategory":"Sports-Kit", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"sports-9", "productName":"Football",            "imageSRC": "sports/sports-kit-3.jpg", "brandName":"Nike",      "price":"899",  "subCategory":"Sports-Kit", "details": [1, 2, 3, 4, 5] }
+    ],
+
+    "clothing":[
+        {  "productID":"clothing-1", "productName":"Solid Purple Shirt ",    "imageSRC": "clothing/shirt-1.jpg",  "brandName":"Lee",      "price":"499",  "subCategory":"Shirt", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"clothing-2", "productName":"Full Arm Blue Shirt",    "imageSRC": "clothing/shirt-2.jpg",  "brandName":"Reebok",   "price":"599",  "subCategory":"Shirt", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"clothing-3", "productName":"Checked Marron Shirt",   "imageSRC": "clothing/shirt-3.jpg",  "brandName":"Adidas",   "price":"1899", "subCategory":"Shirt", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"clothing-4", "productName":"Casual Purple Shirt",    "imageSRC": "clothing/shirt-4.jpg",  "brandName":"Puma",     "price":"999",  "subCategory":"Shirt", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"clothing-5", "productName":"Solid Red T-Shirt",      "imageSRC": "clothing/tshirt-1.jpg", "brandName":"Lee",      "price":"699",  "subCategory":"T-Shirt", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"clothing-6", "productName":"Printed Black T-Shirt",  "imageSRC": "clothing/tshirt-2.jpg", "brandName":"Reebok",   "price":"399",  "subCategory":"T-Shirt", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"clothing-7", "productName":"Solid Green T-Shirt",    "imageSRC": "clothing/tshirt-3.jpg", "brandName":"Puma",     "price":"899",  "subCategory":"T-Shirt", "details": [1, 2, 3, 4, 5] },
+        {  "productID":"clothing-8", "productName":"Blue Jersey",            "imageSRC": "clothing/tshirt-4.jpg", "brandName":"Adidas",   "price":"1299", "subCategory":"T-Shirt", "details": [1, 2, 3, 4, 5] }
+    ]
+};

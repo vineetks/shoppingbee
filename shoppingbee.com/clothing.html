@@ -1,0 +1,135 @@
+<!-- Vineet Kumar Singh :: Case Study -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Bee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="Shopping Bee :: Online shopping store" name="description">
+	<meta content="Shopping Bee, Online Shopping" name="keywords">
+	<meta name="theme-color" content="#131317">
+	<link rel="icon" type="img/jpg" href="../assets/images/shopping-bee-logo.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Coustard">
+    <link rel="stylesheet" href="../css/shoppingbee.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/shoppingbee.js"></script>
+    <script src="../assets/json/productDetails.json" ></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/cart.js"></script> 
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="" class="container-fluid text-center header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+					<img src="../assets/images/shopping-bee.jpg" alt="Shopping Bee Logo">
+                    <div class="login-status"><span id="userSpan"></span><a href="#" class="login">Login</a></div>
+				</div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-default navbar-modified"  id="navigation"> 
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="nav navbar-nav modified-navbar1">
+                <li><img src="../assets/images/shopping-bee-logo.jpg" alt="Shopping Bee Logo" style="height: 48px;float: left"/></li> 
+				<li><a class="navbar-brand webpage-title" href="index.html">Shopping Bee</a></li>
+            </ul>
+            <div class="col-xs-12 col-sm-6 col-md-8 modified-search">
+                <input class="form-control" type="text" placeholder="Search from a variety of products" id="search">
+                <div id="searchResults"></div>
+            </div>
+            <div id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right modified-navbar">
+                        <li class="dropdown table-cell">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My account<span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="x">
+                                <li><a href="#profile">My Profile</a></li>
+                                <li><a href="#orders">Orders</a></li>
+                                <li><a href="#wishlist">Wishlist</a></li>
+                                <li><a href="#reviews">Reviews</a></li>
+								<li><a href="#" class="login">Login</a></li>
+                            </ul>
+                        </li>
+                        <li class="table-cell"><span class="glyphicon glyphicon-shopping-cart glyphicon-cart-modified"></span><span id="cart-counter">1</span></li> 
+                    </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid modified-container-fluid">
+        <div id="product-nav" class="container">
+            <ul class="nav nav-justified text-center content-navbar collapse navbar-collapse" id="myNavbar1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li class="active"><a href="clothing.html">Clothing</a></li>
+            </ul>
+        </div>
+
+        <div id="content" class="container">
+            <div class="addCartMessage"></div>
+            <div class="row" style="padding: 20px 0;">
+                <div class="col-md-3">
+                    <div class="panel-group filter-category">
+
+                    </div>
+                </div>
+                <div class="col-md-9 product-items">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-left">
+        <div class="container text-center">
+            <h4>© Shopping Bee, 2016 :: Vineet Kumar Singh<span class="footer-updated">Last Updated: Sept 11th, 2016, 5:30PM</span></h4>
+        </div>
+        <div class="container footer-links">
+            <div class="row footer-links">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <h4>Popular Categories</h4>
+                    <ul>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Mobiles</a></li>
+                        <li><a href="#">Laptops</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <h4>Shopping Bee</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">In News</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <h4>Get Social With Us</h4>
+                    <ul id="social">
+                        <li><a href="#" target="_blank">Facebook</a></li>
+                        <li><a href="#" target="_blank">Twitter</a></li>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">Google+</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

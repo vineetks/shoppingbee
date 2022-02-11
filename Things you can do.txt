@@ -1,0 +1,9 @@
+1. Login, logout full functionality
+2. Full filtering of products on every page.
+3. Search any product in search input and go to corresponding page.
+4. Products addition to cart.
+5. Product detail functional page
+6. Cart page functional(change quantity, remove product, error messages)
+
+
+P.S.: Two items are already present in the cart from users JSON file.
